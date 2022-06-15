@@ -1,0 +1,10 @@
+<div>
+    <button (click)="prevPage()">Anterior</button>
+    <button (click)="nextPage()">Siguiente</button>
+</div>
+<section #section *ngFor="let pokemon of allPokes" >
+    <div>
+        <p>{{ pokemon.name }}</p>
+        <img src="{{ pokemon.sprites.front_default }}" alt="">
+    </div>
+</section>
